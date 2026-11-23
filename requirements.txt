@@ -1,0 +1,34 @@
+# Battery State-of-Health Estimation - Python dependencies
+# Developed on Python 3.10.11
+#
+# NOTE ON PYTORCH: install the build that matches your CUDA version.
+# The plain `torch` pin below installs the default wheel, which may be CPU-only.
+# Use the selector at https://pytorch.org/get-started/locally/ for a GPU build.
+
+# Core numerics and plotting
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+seaborn>=0.12
+
+# Signal / time-frequency (spectrogram autoencoder, notebook 14)
+PyWavelets>=1.4          # imported as `pywt`
+
+# Classical ML and metrics
+scikit-learn>=1.3
+xgboost>=2.0
+
+# Deep learning
+torch>=2.0
+
+# Hyperparameter optimization
+optuna>=3.4
+
+# I/O, model saving, data download, progress bars
+joblib>=1.3
+gdown>=4.7
+tqdm>=4.66
+
+# Notebook environment
+jupyterlab>=4.0
+ipykernel>=6.25
